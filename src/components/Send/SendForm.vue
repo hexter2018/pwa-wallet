@@ -5,13 +5,13 @@
         <p>Current Balance</p>
       </div>
       <div class="right">
-        <p>{{confirmedBalance}} <span class="bolder">XMN</span></p>
+        <p>{{confirmedBalance}} <span class="bolder">PARK</span></p>
       </div>
     </div>
 
     <form @submit.prevent="confirmSend">
       <div class="field">
-        <label class="label">Please enter the destination XMN Wallet Address</label>
+        <label class="label">Please enter the destination PARK Wallet Address</label>
         <div class="control">
           <input class="input"
             type="text"
@@ -53,7 +53,7 @@ export default {
       let isValid = false;
       if (this.sendData.address &&
         this.sendData.amount &&
-        WAValidator.validate(this.sendData.address, 'XMN') &&
+        WAValidator.validate(this.sendData.address, 'PARK') &&
         this.sendData.amount <= this.confirmedBalance &&
         this.sendData.amount > 0) {
         isValid = true;
@@ -73,8 +73,8 @@ export default {
       if (this.isFormValid) {
         this.$dialog.confirm({
           title: 'Confirm Transaction',
-          message: `You are about to send <b>${this.sendData.amount}</b> to <b>${this.sendData.address}</b>. 0.00001 XMN will be added as tx fees \
-           thats a total of <b>${Number(this.sendData.amount) + 0.00001} XMN</b>. Do you want to continue?`,
+          message: `You are about to send <b>${this.sendData.amount}</b> to <b>${this.sendData.address}</b>. 0.00001 PARK will be added as tx fees \
+           thats a total of <b>${Number(this.sendData.amount) + 0.00001} PARK</b>. Do you want to continue?`,
           confirmText: 'Continue',
           type: 'is-success',
           hasIcon: true,

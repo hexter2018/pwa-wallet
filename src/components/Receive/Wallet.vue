@@ -12,7 +12,7 @@
             <p>{{title}}</p>
           </div>
           <div class="amount">
-            <p>{{amount}} <span class="bolder">XMN</span></p>
+            <p>{{amount}} <span class="bolder">PARK</span></p>
           </div>
         </div>
         <div class="bottom">

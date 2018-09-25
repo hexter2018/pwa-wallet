@@ -1,7 +1,7 @@
 <template>
   <div id="balance">
     <p>Current Balance</p>
-    <h2>{{confirmedBalance}} <span class="bold">XMN</span></h2>
+    <h2>{{confirmedBalance}} <span class="bold">PARK</span></h2>
   </div>
 </template>
 

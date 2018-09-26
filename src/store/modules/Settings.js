@@ -1,13 +1,13 @@
 const state = {
   network: {
-    messagePrefix: '\x19Motion Signed Message:\n',
+    messagePrefix: '\x19Parking Signed Message:\n',
     bip32: {
       public: 0x0488b21e,
       private: 0x0488ade4,
     },
-    pubKeyHash: 0x32,
-    scriptHash: 0x12,
-    wif: 0x80,
+    pubKeyHash: 0x38,
+    scriptHash: 0x15,
+    wif: 0xb8,
   },
 };
 

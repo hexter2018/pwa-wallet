@@ -15,7 +15,7 @@
         <div class="control">
           <input class="input"
             type="text"
-            placeholder="Motion Wallet"
+            placeholder="Parking Wallet"
             v-model="sendData.address">
         </div>
       </div>
@@ -26,7 +26,7 @@
           <input class="input"
             type="number"
             step="0.000001"
-            placeholder="Motion Wallet"
+            placeholder="Parking Wallet"
             v-model="sendData.amount">
         </div>
       </div>
